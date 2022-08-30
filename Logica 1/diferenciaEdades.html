@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edades</title>
+</head>
+
+<body>
+    <script>
+        var edadMia = 27;
+        var edadHermano = 47;
+        var diffEdad = Math.abs(edadMia - edadHermano);
+
+        imprimir("Nuestra diferencia de edad es: " + diffEdad);
+        
+        function saltoLinea(cant) {
+            let i = 0
+            if (cant == null) {
+                for (i; i < 1; i++) {
+                    document.write("<br>");
+                }
+            } else {
+                for (i; i < cant; i++) {
+                    document.write("<br>");
+                }
+            }
+        }
+
+        function imprimir(x) {
+            document.write(x);
+            saltoLinea();
+        }
+    </script>
+</body>
+
+</html>

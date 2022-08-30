@@ -1,0 +1,31 @@
+<meta charset=UTF-8">
+<h1>Estrellas</h1>
+
+<script>
+    for (i = 0; i <= 10; i++) {
+        for (j = 10; 1 <= j; j--) {
+            document.write("*");
+        }
+        saltoLinea(1);
+    }
+
+
+    /* ---------------------------------- Funciones ---------------------------------- */
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+</script>

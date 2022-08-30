@@ -1,0 +1,37 @@
+<meta charset=UTF-8">
+<h1>Numero pares</h1>
+
+<script>
+
+    var numeroInicial = 1;
+    var numeroFinal = parseInt(prompt(`Ingrese el numero a calcular sus pares:`));
+    var multiplo = 2;
+
+    while (numeroInicial <= numeroFinal) {
+        if (numeroInicial % multiplo == 0) {
+            imprimir(`El numero ${numeroInicial} es par`);
+        }
+        numeroInicial++;
+
+    }
+    imprimir(`Fin!`);
+
+    // Funciones
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+</script>

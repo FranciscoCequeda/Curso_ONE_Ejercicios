@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N").toUpperCase();
+
+    validarLicencia(edad, tieneLicencia);
+
+    // Funciones
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+
+    function validarLicencia(edad, respuesta) {
+        imprimir(`Su Edad es: <b>${edad} Años</b> y su estado de la Licencia es: <b>${respuesta}</b>
+                por lo tanto:`);
+        if (edad >= 18.5 && respuesta == "S") {
+            imprimir("Puedes conducir");
+        } else {
+            imprimir("No puedes conducir");
+        }
+    }
+</script>

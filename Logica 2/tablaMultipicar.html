@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>Generar tabla de Multiplicar</h1>
+
+<script>
+    imprimir(`Uso de rutina WHILE`);
+    var aux = 1;
+
+    while (aux <= 10) {
+        imprimir(`5 x ${aux} = ${5*aux}`);
+        aux++;
+    }
+
+    saltoLinea(2);
+    imprimir(`Uso de rutina FOR`);
+    for (let i = 1; i <= 10; i++) {
+        imprimir(`5 x ${i} = ${5*i}`);  
+    }
+
+    // Funciones
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+</script>

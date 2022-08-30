@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>Años Mundiales FIFA</h1>
+
+<script>
+    var añoInicio = 1930;
+    var añoLimite = parseInt(prompt(`Ingrese el año hasta el cual desea consultar:`));
+    while (añoInicio <= añoLimite) {
+        imprimir(`Hubo mundial de la FIFA en el año: ${añoInicio}`);
+        añoInicio += 4;
+    }
+
+    // Funciones
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+</script>

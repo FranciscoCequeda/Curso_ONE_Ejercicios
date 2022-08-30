@@ -1,0 +1,36 @@
+<meta charset=UTF-8">
+<h1>Media Edades Familia</h1>
+
+<script>
+
+    var cantFlia = parseInt(prompt(`Ingrese la cantidad de familiares:`));
+    var contador = 1;
+    var acumulador = 0;
+    while (contador <= cantFlia) {
+        var edad = parseInt(prompt(`Ingrese la edad del familiar ${contador}:`));
+        acumulador += edad;
+        contador++;
+    }
+    var promedio = acumulador / cantFlia;
+    imprimir(`La media de las edades es: ${promedio}`)
+
+    // Funciones
+    /* ------------ Funciones del programa ------------ */
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+</script>

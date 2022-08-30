@@ -1,0 +1,51 @@
+<meta charset=UTF-8">
+
+<script>
+    var year = 2025;
+    imprimir("Juan tiene: " + (year - 2000) + " Años");
+    // saltoLinea();
+
+    imprimir("Pedro tiene: " + (year - 1995) + " Años");
+    year = 2030;
+    // saltoLinea(1);
+
+    imprimir("Carlos tiene: " + (year - 2005) + " Años");
+    // saltoLinea(1);
+
+    year = 2020;
+    imprimir("Jimena tiene: " + (year - 2010) + " Años");
+    // saltoLinea(1);
+
+    imprimir("Paola tiene: " + (year - 1995) + " Años");
+    // saltoLinea(1);
+
+    imprimir("Lura tiene: " + (year - 2005) + " Años");
+    saltoLinea(2);
+
+    var persona1 = 10;
+    var persona2 = 25;
+    var persona3 = 15;
+
+    var promedio = (persona1 + persona2 + persona3) / 3
+    imprimir("El promedio de edades de ellas es: " + Math.round(promedio));
+
+    imprimir("<br>");
+
+    function saltoLinea(cant) {
+        let i = 0
+        if (cant == null) {
+            for (i; i < 1; i++) {
+                document.write("<br>");
+            }
+        } else {
+            for (i; i < cant; i++) {
+                document.write("<br>");
+            }
+        }
+    }
+
+    function imprimir(x) {
+        document.write(x);
+        saltoLinea();
+    }
+</script>
