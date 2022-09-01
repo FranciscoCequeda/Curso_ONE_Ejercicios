@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñando con el mouse</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var pantalla = document.querySelector('canvas');
+        var pincel = pantalla.getContext('2d');
+        pincel.fillStyle = 'lightgrey';
+        pincel.fillRect(0, 0, 600, 400);
+        var puedoDibujar;
+        var w = 50;
+        var h = 50;
+        var color;
+
+        function dibujarCirculo(evento) {
+            x = evento.pageX - pantalla.offsetLeft;
+            y = evento.pageY - pantalla.offsetTop;
+
+            if (x >= 0 && x <= 155 && y <= h + 5) {
+                puedoDibujar = false;
+            }
+
+            if (puedoDibujar) {
+
+                pincel.fillStyle = color;
+                pincel.beginPath();
+                pincel.arc(x, y, 5, 0, 2 * 3.14);
+                pincel.fill();
+
+                console.log(`x: ${x}, y: ${y}`);
+                console.log(`${color}`);
+                console.log(`${puedoDibujar}`);
+            }
+        }
+
+        function paletaColor(x, y, w, h, color) {
+            pincel.fillStyle = color;
+            pincel.beginPath();
+            pincel.fillRect(x, y, w, h)
+        }
+
+        function habilitarDibujar(evento) {
+            x = evento.pageX - pantalla.offsetLeft;
+            y = evento.pageY - pantalla.offsetTop;
+
+            if ((x <= w && y <= h)) {
+                color = "red";
+            } else if (x > 50 && x <= 100 && y < h) {
+                color = "green";
+            } else if (x > 100 & x <= 150 && y < h) {
+                color = "blue";
+            }
+            puedoDibujar = true;
+        }
+
+        function deshabilitarDibujar() {
+
+            puedoDibujar = false;
+        }
+
+        paletaColor(0, 0, w, h, "red");
+        paletaColor(w, 0, w, h, "green");
+        paletaColor(w * 2, 0, w, h, "blue");
+
+        pantalla.onmousemove = dibujarCirculo;
+
+        pantalla.onmousedown = habilitarDibujar;
+
+        pantalla.onmouseup = deshabilitarDibujar;
+
+    </script>
+</body>
+
+</html>
