@@ -1,0 +1,217 @@
+header {
+    height: 5%;
+    background: #bbbbbb;
+    padding: 1.2rem 0;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 10%;
+}
+
+.caja {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.caja img:hover {
+    filter: blur(.7px);
+    transition: filter 300ms ease-in-out;
+}
+
+nav {
+    margin: 5% auto;
+    float: right;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 0 0 0 .7rem;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: rgb(173, 153, 43);
+    text-decoration: underline;
+    transition: color 300ms ease-in-out;
+}
+
+.productos {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.productos li {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    border: 2px solid black;
+    margin: 0 1.5%;
+    padding: 1em 2rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.productos li:hover {
+    border-color: rgb(173, 153, 43);
+    transform: scale(1.03);
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 1.4rem;
+}
+
+.productos img {
+    width: 70%;
+}
+
+.productos li:hover img {
+    filter: blur(2px);
+    transition: filter 300ms ease-in-out;
+}
+
+.descripcion {
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(../Images/JPG/bg.jpg);
+    padding: 1.5em;
+}
+
+footer img:hover {
+    filter: blur(.7px) opacity(0.3);
+    transition: filter 300ms ease-in-out;
+}
+
+.copyright {
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+form {
+    width: 40%;
+    margin: 10px auto;
+}
+
+form label{
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.input-formulario {
+    width: 80%;
+    display: block;
+    margin: .5rem auto .5rem auto;
+    padding: .7rem 1.2rem;
+    text-align: center;
+}
+
+textarea.input-formulario {
+    height: 8rem;
+}
+
+
+#contactoContainer {
+    width: 80%;
+    margin: .5rem auto .3rem auto;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#contactoContainer p, #contactoContainer label, #contactoContainer input{
+    text-align: left;
+}
+
+.horarioContacto{
+    width: 80%;
+    text-align: justify;
+    margin: .5rem auto .3rem auto;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.horarioContacto select {
+    margin: .5rem auto .5rem auto;
+    padding: .7rem 1.2rem;
+    text-align: left;
+}
+
+.checkNoti {
+    width: 80%;
+    text-align: justify;
+    margin: .3rem auto;
+}
+
+.enviar {
+    font-size: .8em;
+    width: 50%;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transition: 1s all;
+    transform: scale(1.12);
+}
+
+table {
+    margin: 1rem auto;
+}
+
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: .5rem 3rem;
+}
