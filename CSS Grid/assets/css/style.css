@@ -1,0 +1,31 @@
+.app {
+    background: #f1f1f1;
+    font-family: Arial, "Helvetica", Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "contenido"
+    "rodapie";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    grid-area: encabezado;
+    padding: 0 2rem;
+}
+
+.contenido {
+    grid-area: contenido;
+    padding: 0rem 2rem;
+}
+
+.rodapie {
+    grid-area: rodapie;
+    background: #fdfdfd;
+    color: #333333;
+    padding: 1rem;
+    text-align: center;
+}
