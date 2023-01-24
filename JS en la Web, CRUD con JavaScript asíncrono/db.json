@@ -1,0 +1,19 @@
+{
+  "perfil": [
+    {
+      "nombre": "Harland Lohora",
+      "email": "harland@alura.com",
+      "id": 1
+    },
+    {
+      "nombre": "Francisco Cequeda",
+      "email": "franciscocequedaa@gmail.com",
+      "id": "e29bc683-c9cb-4cf4-b715-656e268d5f53"
+    },
+    {
+      "nombre": "Elvis Alvarez",
+      "email": "alvez_12@hotmail.es",
+      "id": "249c3c9d-84e6-49de-892f-a54ef4cfaf95"
+    }
+  ]
+}
